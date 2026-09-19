@@ -127,7 +127,7 @@ Ambiguous and unusable dates are excluded from analyses where date accuracy woul
 
 **Business Question:** Does repayment behavior predict churn?
 
-**Base population:** **6,896 customers** appearing in both payment and churn data, with a **12.0% baseline churn rate**.
+**Base population:** **6,896 customers** appearing in both payment and churn data, with a **12.1% baseline churn rate**.
 
 | Behavior     | Churn (flag=0) | Churn (flag=1) |      Lift |
 | ------------ | -------------: | -------------: | --------: |

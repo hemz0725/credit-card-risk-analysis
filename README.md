@@ -8,7 +8,7 @@ A risk-focused analysis of **₹52.25Cr in billed credit-card payments**, identi
 
 * Portfolio collects **96.0%**, but **₹49.1L** is trapped in Minimum Due Paid customers.
 * **Top 50 silent-risk customers carry ₹19L exposure** — **84% remain active**, meaning the risk has not yet materialized as churn.
-* Minimum Due Paid customers churn at **16.89% vs 12.0% baseline — 1.46× lift**, higher than customers who were ever unpaid.
+* Customers who ever paid only the minimum churn at 16.89% vs 11.60% for those who never did (1.46×), comparable to customers who were ever unpaid (16.41%).
 * **5,539 transactions generate ₹1.53L negative net revenue**; 100% receive cashback, with ₹10K+ transactions averaging **-₹105 per transaction**.
 * Transaction failures are broadly uniform across types, channels, and cities (**3.96%–4.90%**), pointing toward an operational issue rather than a segment-specific problem.
 

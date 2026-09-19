@@ -85,7 +85,7 @@ Ambiguous and unusable dates are excluded from analyses where date accuracy woul
 
 **Business Question:** Which customer segments carry the Min Due Paid and Partial shortfall?
 
-**Key finding:** Salaried employees carry **₹27.6L of Min Due Paid shortfall**, representing **56%** of the total. The pattern is occupational rather than regional or acquisition-channel specific.
+**Key finding:** Salaried employees carry **₹27.6L of Min Due Paid shortfall**, representing **56%** of the total. This is in line with Salaried being 54% of the customer base, so the exposure follows customer volume.
 
 **Output:**
 
@@ -95,7 +95,7 @@ Ambiguous and unusable dates are excluded from analyses where date accuracy woul
 | Other occupations |                 ₹21.6L |             ₹6.2L |             ₹27.8L |
 | **Total**         |             **₹49.1L** |        **₹16.5L** |         **₹65.6L** |
 
-**Interpretation:** Salaried customers account for the largest concentration of the shortfall, with **₹27.6L** in Minimum Due Paid exposure alone. The same pattern appears across cities and acquisition channels, so the concentration is not explained by a single geography or channel. Metro cities contribute significant exposure, but this reflects the concentration of salaried customers rather than a standalone geographic effect. No major acquisition channel dominates the pattern.
+**Interpretation:** Salaried customers account for the largest concentration of the shortfall, with **₹27.6L** in Minimum Due Paid exposure alone. Metro cities contribute significant exposure, but this reflects the concentration of salaried customers rather than a standalone geographic effect. No major acquisition channel dominates the pattern.
 
 **Recommendation:** Prioritize Salaried Min Due Paid customers for collections outreach and segment them further by credit-limit or tenure bands.
 
@@ -136,7 +136,7 @@ Ambiguous and unusable dates are excluded from analyses where date accuracy woul
 | ever_unpaid  |         11.79% |         16.41% |     1.39× |
 | ever_partial |         11.84% |         14.75% |     1.25× |
 
-**Interpretation:** All four repayment behaviors are associated with higher churn rates. Minimum Due Paid shows the strongest observed association at **16.89% churn**, or **1.46×** the baseline. Notably, its churn rate is higher than the rate among customers who were ever unpaid (**16.41%**), reinforcing the silent-risk signal. These results identify an association, not proof that repayment behavior causes churn.
+**Interpretation:** All four repayment behaviors are associated with higher churn rates. Minimum Due Paid shows one of the strongest observed associations at **16.89% churn**, or **1.46×** the baseline. Notably, its churn rate is higher than the rate among customers who were ever unpaid (**16.41%**), reinforcing the silent-risk signal. These results identify an association, not proof that repayment behavior causes churn.
 
 **Recommendation:** Use Minimum Due Paid status as an early-warning indicator alongside exposure and customer-level repayment history.
 
@@ -173,7 +173,7 @@ This consistency suggests an operational issue rather than a failure pattern iso
 * **5,539** successful, non-refund, non-dispute transactions have negative `net_revenue`.
 * **100%** of them have cashback.
 * Total negative revenue: **₹1.53L**.
-* Card Purchase represents **83% of transactions and 91% of the loss**.
+* Card Purchase represents **83% of these transactions and 91% of the loss**.
 * ₹10K+ transactions average **-₹105.10 net revenue per transaction**.
 
 **Interpretation:** Transaction failures are broadly uniform across major dimensions, pointing toward an operational rather than segment-specific issue. Insurance and Hotel have elevated failure rates, while Travel has the highest failed transaction value at **₹63.9L**. A separate economics issue appears in cashback: **5,539 transactions generate ₹1.53L of negative net revenue**, and the loss per transaction increases with transaction size. This indicates that the current cashback economics can become increasingly unfavorable on higher-value transactions.

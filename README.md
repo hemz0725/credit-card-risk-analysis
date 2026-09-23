@@ -187,10 +187,10 @@ This consistency suggests an operational issue rather than a failure pattern iso
 ## Dashboards
 
 ### Dashboard 1 — Portfolio Risk Overview
-![Portfolio Risk Overview](dashboard/dashboard_1_portfolio_risk.png)
+![Portfolio Risk Overview](dashboards/dashboard_1_portfolio_risk.png)
 
 ### Dashboard 2 — Churn & Payment Behavior
-![Churn & Payment Behavior](dashboard/dashboard_2_churn_behavior.png)
+![Churn & Payment Behavior](dashboards/dashboard_2_churn_behavior.png)
 
 *Built in Power BI Desktop with a direct PostgreSQL connection to `cleaned_schema`.*
 

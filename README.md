@@ -7,7 +7,7 @@ A risk-focused analysis of **₹52.25Cr in billed credit-card payments**, identi
 ## The Findings
 
 * Portfolio collects **96.0%**, but **₹49.1L** is trapped in Minimum Due Paid customers.
-* **Top 50 silent-risk customers carry ₹19L exposure** — **84% remain active**, meaning the risk has not yet materialized as churn.
+* **Top 50 silent-risk customers carry ₹19L exposure** — **82% remain active**, meaning the risk has not yet materialized as churn.
 * Customers who ever paid only the minimum churn at 16.89% vs 11.60% for those who never did (1.46×), comparable to customers who were ever unpaid (16.41%).
 * **5,539 transactions generate ₹1.53L negative net revenue**; 100% receive cashback, with ₹10K+ transactions averaging **-₹105 per transaction**.
 * Transaction failures are broadly uniform across types, channels, and cities (**3.96%–4.90%**), pointing toward an operational issue rather than a segment-specific problem.
@@ -112,7 +112,7 @@ Ambiguous and unusable dates are excluded from analyses where date accuracy woul
 * Top 50 customers represent approximately **₹19L of ₹49.1L** total Min Due Paid shortfall — about **40%**.
 * Largest single exposure: **₹1,04,464** shortfall from one customer.
 * Most top-50 customers have only **1–2 Min Due Paid months** — exposure-driven rather than chronic behavior.
-* **84% remain active**; only 8 of 50 have churned.
+* **82% remain active**; only 9 of 50 have churned.
 * Late fees of **₹46,950** exceed interest of **₹28,824** across the top 50.
 
 **Interpretation:** Min Due Paid shortfall is highly concentrated, with roughly 40% sitting among only 50 customers. Most of these customers are not repeatedly paying minimum due; instead, high balances make even one or two Min Due Paid months financially significant. The largest customer exposure exceeds ₹1L, while **84% of the top 50 remain active**, meaning the risk is visible before it has translated into churn. Late fees also exceed interest, indicating that repayment stress is accompanied by additional delinquency costs.
@@ -181,6 +181,18 @@ This consistency suggests an operational issue rather than a failure pattern iso
 **Recommendation:** Investigate the Insurance/Hotel failure paths operationally and review cashback caps or thresholds for high-value transactions.
 
 **Query:** `sql/h5_transaction_failure.sql`
+
+---
+
+## Dashboards
+
+### Dashboard 1 — Portfolio Risk Overview
+![Portfolio Risk Overview](dashboard/dashboard_1_portfolio_risk.png)
+
+### Dashboard 2 — Churn & Payment Behavior
+![Churn & Payment Behavior](dashboard/dashboard_2_churn_behavior.png)
+
+*Built in Power BI Desktop with a direct PostgreSQL connection to `cleaned_schema`.*
 
 ---
 
